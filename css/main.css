@@ -743,7 +743,7 @@ ol.list-num li:after {
 }
 
 .breadcrumb>.active {
-    color: #fea84b;
+    color: #fea84b!important;
     opacity: .9
 }
 
@@ -12804,9 +12804,9 @@ h3.small {
     margin: 33px auto 19px
 }
 
-.testimonial .quote-image {
+/* .testimonial .quote-image {
     max-width: 75px
-}
+} */
 
 .sergical .item-content {
     padding: 55px 58px 63px
