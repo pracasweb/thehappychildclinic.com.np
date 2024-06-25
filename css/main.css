@@ -8512,8 +8512,11 @@ body.boxed {
     position: relative
 }
 
-.item-media img {
+/* .item-media img {
     width: 100%
+} */
+.item-media img {
+    width: 24%
 }
 
 .item-media.cover-image {
@@ -8747,7 +8750,7 @@ blockquote.vertical-item .small-text {
 
 .surgical .vertical-item .item-content p {
     margin-top: 20px;
-    max-height: 73px;
+    max-height: 96px;
     overflow: hidden
 }
 
@@ -16522,7 +16525,8 @@ a img.aligncenter {
     opacity: .95;
     padding: 0 !important;
     position: absolute;
-    right: 0;
+    /* right: 0; */
+    right: 34px;
     top: 50%;
     visibility: visible;
     width: 60px;
