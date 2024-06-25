@@ -17028,7 +17028,8 @@ a img.aligncenter {
 }
 
 .page_header .row {
-    min-height: 80px
+    /* min-height: 80px */
+    min-height: 100px;
 }
 
 .page_header a {
