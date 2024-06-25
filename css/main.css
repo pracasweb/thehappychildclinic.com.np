@@ -8512,10 +8512,10 @@ body.boxed {
     position: relative
 }
 
-/* .item-media img {
-    width: 100%
-} */
 .item-media img {
+    width: 100%
+}
+.item-media-services img {
     width: 24%
 }
 
