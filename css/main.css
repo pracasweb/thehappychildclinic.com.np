@@ -8449,6 +8449,9 @@ body.boxed {
     .vertical-item.content-padding .item-content {
         padding: 30px
     }
+    .top-nav .sf-menu a{
+        padding: 10px;
+    }
 }
 
 .vertical-item.content-padding.padding-small .item-content {
@@ -16741,7 +16744,7 @@ a img.aligncenter {
     .top-nav .sf-menu a {
         color: #fff;
         display: block;
-        padding: 10px;
+        /* padding: 10px; */
         z-index: 2
     }
 
@@ -16781,7 +16784,7 @@ a img.aligncenter {
     .sfHover>.sf-with-ul+.sf-menu-item-mobile-toggler:after {
         content: "\f107"
     }
-}
+
 
 @media screen and (min-width:1199px) {
     .top-nav ul .mega-menu ul {

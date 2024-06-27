@@ -32,22 +32,39 @@ function menuHideExtraElements() {
 				logoWidth = $logo.outerWidth(true) + 70;
 			}
 
-			// var wrapperWidth = $('.sf-menu').width();
-			var wrapperWidth = $menuWraper.outerWidth(true);
-			$menuLis.each(function(index) {
-				//4 - 4px additional width for inline-block LI element
-				var elementWidth = $(this).outerWidth() +4;
-				summaryLiWidth += elementWidth;
-				if(summaryLiWidth >= (wrapperWidth-logoWidth)) {
-					var $newLi = $('<li class="sf-more-li"><a>...</a><ul></ul></li>');
-					$($menuLis[index - 1 ]).before($newLi);
-					var newLiWidth = $($newLi).outerWidth(true);
-					var $extraLiElements = $menuLis.filter(':gt('+ ( index - 2 ) +')');
-					$extraLiElements.clone().appendTo($newLi.find('ul'));
-					$extraLiElements.addClass('sf-xl-hidden');
-					return false;
+			// // var wrapperWidth = $('.sf-menu').width();
+			// var wrapperWidth = $menuWraper.outerWidth(true);
+			// $menuLis.each(function(index) {
+			// 	//4 - 4px additional width for inline-block LI element
+			// 	var elementWidth = $(this).outerWidth() +4;
+			// 	summaryLiWidth += elementWidth;
+			// 	if(summaryLiWidth >= (wrapperWidth-logoWidth)) {
+			// 		var $newLi = $('<li class="sf-more-li"><a>...</a><ul></ul></li>');
+			// 		$($menuLis[index - 1 ]).before($newLi);
+			// 		var newLiWidth = $($newLi).outerWidth(true);
+			// 		var $extraLiElements = $menuLis.filter(':gt('+ ( index - 2 ) +')');
+			// 		$extraLiElements.clone().appendTo($newLi.find('ul'));
+			// 		$extraLiElements.addClass('sf-xl-hidden');
+			// 		return false;
+			// 	}
+			// });
+			$('.sf-menu').each(function(){
+				var $thisMenu = $(this);
+				var $menuWraper = $thisMenu.closest('.top-nav');
+				$menuWraper.attr('style', '');
+				if (windowWidth > 1199) {
+				  var $menuLis = $menuWraper.find('.sf-menu > li');
+				  $menuLis.removeClass('sf-xl-hidden');
+			  
+				  var visibleItems = 8; // adjust this value to control the number of visible items
+				  var hiddenItems = $menuLis.slice(visibleItems);
+				  hiddenItems.addClass('sf-xl-hidden');
+			  
+				//   var $newLi = $('<li class="sf-more-li"><a>...</a><ul></ul></li>');
+				//   $menuLis.eq(visibleItems - 1).after($newLi);
+				//   hiddenItems.clone().appendTo($newLi.find('ul'));
 				}
-			});
+			  });
 
 			//processing center logo
 			if ( $headerLogoCenter.length ) {
