@@ -1919,7 +1919,10 @@ h6 small {
     height: 100%;
     position: relative
 }
-
+.video-wrapper {
+    float: right;
+    margin-left: 10px;
+  }
 .owl-carousel .owl-video-play-icon {
     -webkit-backface-visibility: hidden;
     background: url("../img/owl.video.play.png") no-repeat;
