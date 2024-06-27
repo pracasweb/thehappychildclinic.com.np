@@ -17294,7 +17294,8 @@ a.logo {
 
 a.logo img {
     display: inline-block;
-    max-height: 80px
+    /* max-height: 80px */
+    max-height: 90px;
 }
 
 a.logo .logo-text {
