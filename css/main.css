@@ -18098,7 +18098,7 @@ body.active-side-header.slide-right .page_header_side {
 
 @media(max-width:1024px) {
     .page_slider.home_slider .intro_layers h3 {
-        font-size: 30px
+        font-size: 30px;
     }
 
     .page_slider.home_slider .intro_layers h2 {
