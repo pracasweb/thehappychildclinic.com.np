@@ -3283,7 +3283,8 @@ a.pswp__share--download:hover {
     z-index: 1000 */
     background-color: #fea84b;
     border-radius: 4px;
-    bottom: 34px;
+    /* bottom: 34px; */
+    bottom: 93px;
     color: transparent;
     display: none;
     font-size: 0;
@@ -20404,7 +20405,7 @@ section.ds .top-subtitle {
             position: fixed;
             width: 60px;
             height: 60px;
-            bottom: 110px;
+            bottom: 160px;
             right: 30px;
             background-color: #008000;
             color: #FFF;
